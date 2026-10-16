@@ -33,6 +33,8 @@ Plain **HTML, CSS and JavaScript** in a single file — no framework, no build s
 
 ```
 index.html            the whole website (markup, styles, scripts)
+wrangler.jsonc        Cloudflare config (static site, no build)
+.assetsignore         files kept off the live site
 images/
   brand/              logo files
   hero/               hero photo and founder portrait
@@ -45,14 +47,18 @@ images/
 
 Open `index.html` in any browser. No install needed.
 
-## Deploy (Cloudflare Pages, free)
+## Deploy (Cloudflare Workers, free)
 
-1. Cloudflare dashboard → **Workers & Pages** → **Create** → **Pages** → **Connect to Git**.
-2. Pick this repository, branch `main`.
-3. Framework preset **None**, build command **empty**, output directory **`/`**.
-4. **Save and Deploy**. Every push to `main` publishes the site automatically.
+1. Cloudflare dashboard → **Workers & Pages** → **Create** → **Import a repository** and pick this repo.
+2. Project name **`wanieyj`** (must match `name` in `wrangler.jsonc`).
+3. Build command: **leave empty**.
+4. Deploy command: **`npx wrangler deploy`**
+5. Non-production branch deploy command: **`npx wrangler versions upload`**
+6. **Deploy**. Every push to `main` publishes the site automatically.
 
-Custom domain: project → **Custom domains** → **Set up a custom domain**.
+`wrangler.jsonc` serves this folder as a static site; `.assetsignore` keeps repo-only files (README, config, backups) off the live site.
+
+Custom domain: project → **Settings** → **Domains & Routes** → **Add** → **Custom domain**.
 
 ## Common edits
 

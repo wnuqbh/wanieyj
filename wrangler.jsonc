@@ -1,0 +1,9 @@
+{
+  // Cloudflare Workers static site: serves the files in this folder as-is (no build step).
+  // "name" must match the Worker/project name chosen in the Cloudflare dashboard.
+  "name": "wanieyj",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "."
+  }
+}
