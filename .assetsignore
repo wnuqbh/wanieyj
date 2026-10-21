@@ -10,3 +10,4 @@ site-upload
 images/unused
 node_modules
 .wrangler
+client-preview

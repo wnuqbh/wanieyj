@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wanieyj.wanuqbah.workers.dev/sitemap.xml
