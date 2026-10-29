@@ -4,3 +4,18 @@ _reference/
 site-upload/
 images/unused/
 .wrangler/
+
+# private, never commit
+client-preview/ 
+images/*.docx
+
+# dependencies and build output
+node_modules/
+.next/
+out/
+next-env.d.ts
+
+# secrets
+.env*
+!.env.example
+.dev.vars
