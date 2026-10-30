@@ -1,4 +1,5 @@
 import type { Lang } from "@/lib/types";
+import { services } from "@/data/services";
 
 export const dynamicParams = false;
 
@@ -13,5 +14,14 @@ type LangPageProps = {
 export default async function LangHomePage({ params }: LangPageProps) {
   const { lang } = await params;
 
-  return <h1>Language: {lang}</h1>;
+  return (
+    <main>
+      <h1>Language: {lang}</h1>
+      <ul>
+        {services.map((service) => (
+          <li key={service.slug}>{service.name[lang]}</li>
+        ))}
+      </ul>
+    </main>
+  );
 }
