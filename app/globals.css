@@ -1,4 +1,26 @@
 :root {
+  /* Text sizes (P5): phone → desktop */
+  --t-display: clamp(2.75rem, 1.5rem + 5vw, 5rem);
+  --t-h1: clamp(2.25rem, 1.6rem + 2.6vw, 3.5rem);
+  --t-h2: clamp(1.875rem, 1.5rem + 1.5vw, 2.625rem);
+  --t-h3: clamp(1.375rem, 1.25rem + 0.5vw, 1.625rem);
+  --t-body: clamp(1rem, 0.96rem + 0.15vw, 1.0625rem);
+  --t-small: 0.875rem;
+  --t-label: 0.75rem;
+  --t-eyebrow: 0.6875rem;
+
+  /* Spacing (P5) */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 24px;
+  --s-6: 32px;
+  --s-7: 48px;
+  --s-8: 64px;
+  --s-9: 96px;
+  --s-10: 128px;
+
   /* Colours (P5) */
   --cream: #ede5dc;
   --cream-2: #e4dacf;
@@ -24,6 +46,8 @@ body {
   background: var(--cream);
   color: var(--espresso);
   font-family: var(--font-body), sans-serif;
+  font-size: var(--t-body);
+  line-height: 1.7;
 }
 
 h1,
@@ -31,4 +55,19 @@ h2,
 h3 {
   font-family: var(--font-display), serif;
   font-weight: 500;
+}
+
+h1 {
+  font-size: var(--t-h1);
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: var(--t-h2);
+  line-height: 1.15;
+}
+
+h3 {
+  font-size: var(--t-h3);
+  line-height: 1.25;
 }
