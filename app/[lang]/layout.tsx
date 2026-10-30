@@ -3,6 +3,20 @@ import type { ReactNode } from "react";
 import { notFound } from "next/navigation";
 import { isLang, langs } from "@/lib/types";
 import "../globals.css";
+import { Cormorant_Garamond, Mulish } from "next/font/google";
+
+const displayFont = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  style: ["normal", "italic"],
+  variable: "--font-display",
+});
+
+const bodyFont = Mulish({
+  subsets: ["latin"],
+  weight: ["300", "400", "600"],
+  variable: "--font-body",
+});
 
 export const metadata: Metadata = {
   title: "Waniey.J Boutique Tailor",
@@ -23,7 +37,7 @@ export default async function LangLayout({ children, params }: LangLayoutProps) 
   if (!isLang(lang)) notFound();
 
   return (
-    <html lang={lang}>
+    <html lang={lang} className={`${displayFont.variable} ${bodyFont.variable}`}>
       <body>{children}</body>
     </html>
   );
