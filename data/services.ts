@@ -205,4 +205,104 @@ export const services = [
     ],
     photo: "/images/services/kebaya.webp",
   },
+  {
+    slug: "tailored-suit",
+    group: "mens-suit",
+    name: { en: "Tailor-Made Men's Suit", ms: "Sut Lelaki Tempahan" },
+    promise: {
+      en: "Your suit. Your measurements.",
+      ms: "Sut anda. Ukuran anda.",
+    },
+    intro: {
+      en: "Two- or three-piece suits for work, weddings and formal events, cut from your measurements and fitted until the jacket sits clean.",
+      ms: "Sut dua atau tiga helai untuk kerja, perkahwinan dan majlis rasmi, dipotong ikut ukuran anda dan dipadankan sehingga jaket terletak kemas.",
+    },
+    included: [
+      { en: "Measured in the studio", ms: "Diukur di studio" },
+      { en: "Two- or three-piece", ms: "Dua atau tiga helai" },
+      { en: "First and final fitting", ms: "Sesi cuba pertama dan akhir" },
+      { en: "Quote before we start", ms: "Sebut harga sebelum mula" },
+    ],
+    photo: "/images/services/tailored-suit.webp",
+  },
+  {
+    slug: "tailored-blazer",
+    group: "mens-suit",
+    name: { en: "Tailored Blazer", ms: "Blazer Tempahan" },
+    promise: {
+      en: "One jacket, a hundred outfits.",
+      ms: "Satu jaket, seratus gaya.",
+    },
+    intro: {
+      en: "A blazer that works with jeans or trousers, in the fabric and fit you choose.",
+      ms: "Blazer yang sesuai dengan jeans atau seluar slack, dalam kain dan potongan pilihan anda.",
+    },
+    included: [
+      { en: "Measured in the studio", ms: "Diukur di studio" },
+      { en: "Lining and button choice", ms: "Pilihan lapik dan butang" },
+      { en: "First and final fitting", ms: "Sesi cuba pertama dan akhir" },
+      { en: "Quote before we start", ms: "Sebut harga sebelum mula" },
+    ],
+    photo: "/images/services/tailored-blazer.webp",
+  },
+  {
+    slug: "tailored-vest",
+    group: "mens-suit",
+    name: { en: "Tailored Vest", ms: "Vest Tempahan" },
+    promise: {
+      en: "The finishing layer.",
+      ms: "Lapisan penyempurna.",
+    },
+    intro: {
+      en: "A waistcoat to complete a three-piece suit or wear on its own at weddings and events.",
+      ms: "Vest untuk melengkapkan sut tiga helai atau dipakai sendiri di majlis perkahwinan dan acara.",
+    },
+    included: [
+      { en: "Measured in the studio", ms: "Diukur di studio" },
+      { en: "Matched to your suit", ms: "Dipadankan dengan sut anda" },
+      { en: "First and final fitting", ms: "Sesi cuba pertama dan akhir" },
+      { en: "Quote before we start", ms: "Sebut harga sebelum mula" },
+    ],
+    photo: "/images/services/tailored-vest.webp",
+  },
+  {
+    slug: "tailored-shirt",
+    group: "mens-suit",
+    name: { en: "Tailored Shirt", ms: "Kemeja Tempahan" },
+    promise: {
+      en: "A collar that sits right.",
+      ms: "Kolar yang terletak sempurna.",
+    },
+    intro: {
+      en: "Shirts cut to your neck, shoulders and arm length, with the collar, cuff and details you choose.",
+      ms: "Kemeja yang dipotong ikut leher, bahu dan panjang lengan anda, dengan kolar, manset dan perincian pilihan anda.",
+    },
+    included: [
+      { en: "Measured in the studio", ms: "Diukur di studio" },
+      { en: "Collar and cuff choice", ms: "Pilihan kolar dan manset" },
+      { en: "First and final fitting", ms: "Sesi cuba pertama dan akhir" },
+      { en: "Quote before we start", ms: "Sebut harga sebelum mula" },
+    ],
+    photo: "/images/services/tailored-shirt.webp",
+  },
+  {
+    slug: "tailored-pants",
+    group: "mens-suit",
+    name: { en: "Tailored Pants", ms: "Seluar Tempahan" },
+    promise: {
+      en: "The right break, the right rise.",
+      ms: "Labuh dan potongan yang tepat.",
+    },
+    intro: {
+      en: "Trousers measured for your waist, seat and length, so they sit right whether you're standing or sitting.",
+      ms: "Seluar yang diukur untuk pinggang, punggung dan panjang anda, supaya selesa sama ada berdiri atau duduk.",
+    },
+    included: [
+      { en: "Measured in the studio", ms: "Diukur di studio" },
+      { en: "Hem length to your shoes", ms: "Labuh ikut kasut anda" },
+      { en: "First and final fitting", ms: "Sesi cuba pertama dan akhir" },
+      { en: "Quote before we start", ms: "Sebut harga sebelum mula" },
+    ],
+    photo: "/images/services/tailored-pants.webp",
+  },
 ] satisfies Service[];
