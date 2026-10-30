@@ -145,4 +145,64 @@ export const services = [
     ],
     photo: "/images/services/custom-skirt.webp",
   },
+  {
+    slug: "womens-suit",
+    group: "women",
+    name: { en: "Tailor-Made Women's Suit", ms: "Sut Wanita Tempahan" },
+    promise: {
+      en: "Power dressing, your way.",
+      ms: "Bergaya profesional, cara anda.",
+    },
+    intro: {
+      en: "Blazers and suits cut for a woman's frame: clean shoulders, a defined waist and a length you choose. For office, interviews and events.",
+      ms: "Blazer dan sut yang dipotong untuk bentuk badan wanita: bahu kemas, pinggang terbentuk dan panjang pilihan anda. Untuk pejabat, temu duga dan majlis.",
+    },
+    included: [
+      { en: "Measured in the studio", ms: "Diukur di studio" },
+      { en: "Measured by a female tailor", ms: "Diukur oleh tukang jahit wanita" },
+      { en: "First and final fitting", ms: "Sesi cuba pertama dan akhir" },
+      { en: "Quote before we start", ms: "Sebut harga sebelum mula" },
+    ],
+    photo: "/images/services/womens-suit.webp",
+  },
+  {
+    slug: "baju-kurung",
+    group: "women",
+    name: { en: "Baju Kurung", ms: "Baju Kurung" },
+    promise: {
+      en: "Classic or modern, made for you.",
+      ms: "Klasik atau moden, dijahit untuk anda.",
+    },
+    intro: {
+      en: "Traditional, modern and bridal baju kurung, for Raya, weddings, nikah and everyday, sewn neatly to your measurements.",
+      ms: "Baju kurung tradisional, moden dan pengantin, untuk Raya, perkahwinan, nikah dan harian, dijahit kemas ikut ukuran anda.",
+    },
+    included: [
+      { en: "Measured in the studio", ms: "Diukur di studio" },
+      { en: "Family sets available", ms: "Set sedondon keluarga tersedia" },
+      { en: "First and final fitting", ms: "Sesi cuba pertama dan akhir" },
+      { en: "Quote before we start", ms: "Sebut harga sebelum mula" },
+    ],
+    photo: "/images/services/baju-kurung.webp",
+  },
+  {
+    slug: "kebaya",
+    group: "women",
+    name: { en: "Kebaya", ms: "Kebaya" },
+    promise: {
+      en: "Fitted to flatter.",
+      ms: "Dijahit untuk menyerlah.",
+    },
+    intro: {
+      en: "Kebaya that follows your shape without pulling, for weddings, events and formal occasions.",
+      ms: "Kebaya yang mengikut bentuk badan tanpa menegang, untuk perkahwinan, acara dan majlis rasmi.",
+    },
+    included: [
+      { en: "Measured in the studio", ms: "Diukur di studio" },
+      { en: "Lace and fabric guidance", ms: "Panduan renda dan kain" },
+      { en: "First and final fitting", ms: "Sesi cuba pertama dan akhir" },
+      { en: "Quote before we start", ms: "Sebut harga sebelum mula" },
+    ],
+    photo: "/images/services/kebaya.webp",
+  },
 ] satisfies Service[];
