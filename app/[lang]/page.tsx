@@ -1,6 +1,8 @@
 import { notFound } from "next/navigation";
 import { isLang, langs } from "@/lib/types";
 import { services } from "@/data/services";
+import styles from "./page.module.css";
+import { site } from "@/data/site";
 
 export const dynamicParams = false;
 
@@ -17,13 +19,16 @@ export default async function LangHomePage({ params }: LangPageProps) {
   if (!isLang(lang)) notFound();
 
   return (
-    <main>
+    <main className="container">
       <h1>Language: {lang}</h1>
       <ul>
         {services.map((service) => (
           <li key={service.slug}>{service.name[lang]}</li>
         ))}
       </ul>
+      <a className={styles.button} href={`https://wa.me/${site.whatsapp}`}>
+        {lang === "en" ? "Book via WhatsApp" : "Tempah via WhatsApp"}
+      </a>
     </main>
   );
 }

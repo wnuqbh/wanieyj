@@ -1,0 +1,15 @@
+.button {
+  display: inline-block;
+  padding: var(--s-4) var(--s-6);
+  background: var(--espresso);
+  color: var(--cream);
+  font-size: var(--t-label);
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.button:hover {
+  background: var(--grey-text);
+}
