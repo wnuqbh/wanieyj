@@ -42,4 +42,24 @@ export const services = [
     ],
     photo: "/images/services/custom-blazer.webp",
   },
+  {
+    slug: "custom-shirt",
+    group: "corporate-uniform",
+    name: { en: "Custom Shirt", ms: "Kemeja Tempahan" },
+    promise: {
+      en: "The shirt they'll wear every day.",
+      ms: "Kemeja yang dipakai setiap hari.",
+    },
+    intro: {
+      en: "Office and uniform shirts in easy-care fabrics, short or long sleeve, with logo, piping and colour details.",
+      ms: "Kemeja pejabat dan uniform dalam kain mudah dijaga, lengan pendek atau panjang, dengan perincian logo, paip dan warna.",
+    },
+    included: [
+      { en: "Measured in the studio", ms: "Diukur di studio" },
+      { en: "Easy-care fabrics", ms: "Kain mudah dijaga" },
+      { en: "First and final fitting", ms: "Sesi cuba pertama dan akhir" },
+      { en: "Quote before we start", ms: "Sebut harga sebelum mula" },
+    ],
+    photo: "/images/services/custom-shirt.webp",
+  },
 ] satisfies Service[];
