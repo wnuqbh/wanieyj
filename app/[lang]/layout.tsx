@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { notFound } from "next/navigation";
 import { isLang, langs } from "@/lib/types";
+import "../globals.css";
 
 export const metadata: Metadata = {
   title: "Waniey.J Boutique Tailor",

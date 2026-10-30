@@ -1,0 +1,26 @@
+:root {
+  /* Colours (P5) */
+  --cream: #ede5dc;
+  --cream-2: #e4dacf;
+  --line: #d3c6b8;
+  --espresso: #1c1a17;
+  --panel: #27241f;
+  --grey: #7a6b5f;
+  --grey-text: #66584d;
+  --bronze: #5a3b2a;
+  --caramel: #9a6f57;
+  --gold: #d4a853;
+  --whatsapp: #25d366;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--espresso);
+}
