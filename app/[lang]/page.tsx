@@ -1,18 +1,20 @@
-import type { Lang } from "@/lib/types";
+import { notFound } from "next/navigation";
+import { isLang, langs } from "@/lib/types";
 import { services } from "@/data/services";
 
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return [{ lang: "en" }, { lang: "ms" }];
+  return langs.map((lang) => ({ lang }));
 }
 
 type LangPageProps = {
-  params: Promise<{ lang: Lang }>;
+  params: Promise<{ lang: string }>;
 };
 
 export default async function LangHomePage({ params }: LangPageProps) {
   const { lang } = await params;
+  if (!isLang(lang)) notFound();
 
   return (
     <main>

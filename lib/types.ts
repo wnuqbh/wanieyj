@@ -1,4 +1,9 @@
-export type Lang = "en" | "ms";
+export const langs = ["en", "ms"] as const;
+export type Lang = (typeof langs)[number];
+
+export function isLang(value: string): value is Lang {
+  return (langs as readonly string[]).includes(value);
+}
 
 export type Localized = Record<Lang, string>;
 
