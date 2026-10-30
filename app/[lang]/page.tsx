@@ -3,6 +3,7 @@ import { isLang, langs } from "@/lib/types";
 import { services } from "@/data/services";
 import styles from "./page.module.css";
 import { site } from "@/data/site";
+import { dictionary } from "@/data/dictionary";
 
 export const dynamicParams = false;
 
@@ -27,7 +28,7 @@ export default async function LangHomePage({ params }: LangPageProps) {
         ))}
       </ul>
       <a className={styles.button} href={`https://wa.me/${site.whatsapp}`}>
-        {lang === "en" ? "Book via WhatsApp" : "Tempah via WhatsApp"}
+        {dictionary.cta.book[lang]}
       </a>
     </main>
   );
