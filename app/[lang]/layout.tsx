@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { isLang, langs } from "@/lib/types";
 import "../globals.css";
 import { Cormorant_Garamond, Mulish } from "next/font/google";
+import { Header } from "@/components/Header";
 
 const displayFont = Cormorant_Garamond({
   subsets: ["latin"],
@@ -38,7 +39,10 @@ export default async function LangLayout({ children, params }: LangLayoutProps) 
 
   return (
     <html lang={lang} className={`${displayFont.variable} ${bodyFont.variable}`}>
-      <body>{children}</body>
+      <body>
+        <Header lang={lang} />
+        {children}
+      </body>
     </html>
   );
 }
