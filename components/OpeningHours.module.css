@@ -1,0 +1,14 @@
+.hours {
+  margin: 0;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--s-4);
+  max-width: 280px;
+}
+
+.row dd {
+  margin: 0;
+}

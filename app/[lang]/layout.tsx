@@ -5,6 +5,9 @@ import { isLang, langs } from "@/lib/types";
 import "../globals.css";
 import { Cormorant_Garamond, Mulish } from "next/font/google";
 import { Header } from "@/components/Header";
+import { BookingBand } from "@/components/BookingBand";
+import { Footer } from "@/components/Footer";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 const displayFont = Cormorant_Garamond({
   subsets: ["latin"],
@@ -42,6 +45,9 @@ export default async function LangLayout({ children, params }: LangLayoutProps) 
       <body>
         <Header lang={lang} />
         {children}
+        <BookingBand lang={lang} />
+        <Footer lang={lang} />
+        <WhatsAppButton lang={lang} />
       </body>
     </html>
   );

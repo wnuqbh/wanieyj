@@ -1,0 +1,65 @@
+.band {
+  padding-block: var(--s-8);
+  background: var(--panel);
+  color: var(--cream);
+}
+
+.inner {
+  display: grid;
+  gap: var(--s-7);
+}
+
+.label {
+  margin: 0 0 var(--s-4);
+  font-size: var(--t-label);
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.heading {
+  margin: 0 0 var(--s-4);
+}
+
+.address {
+  margin-bottom: var(--s-4);
+  font-style: normal;
+}
+
+.button {
+  display: inline-block;
+  margin-top: var(--s-4);
+  padding: var(--s-4) var(--s-6);
+  background: var(--cream);
+  color: var(--espresso);
+  font-size: var(--t-label);
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.button:hover {
+  background: var(--line);
+}
+
+.link {
+  display: inline-block;
+  margin-top: var(--s-5);
+  color: var(--cream);
+  font-size: var(--t-label);
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-underline-offset: 6px;
+}
+
+@media (min-width: 768px) {
+  .band {
+    padding-block: var(--s-10);
+  }
+
+  .inner {
+    grid-template-columns: 1fr 1fr;
+  }
+}
