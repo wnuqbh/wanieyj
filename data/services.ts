@@ -1,4 +1,11 @@
-import type { Service } from "@/lib/types";
+import type { Localized, Service, ServiceGroup } from "@/lib/types";
+
+export const groupNames = {
+  "corporate-uniform": { en: "Corporate Uniform", ms: "Uniform Korporat" },
+  women: { en: "Women", ms: "Wanita" },
+  "mens-suit": { en: "Men's Suit", ms: "Sut Lelaki" },
+  batik: { en: "Batik", ms: "Batik" },
+} satisfies Record<ServiceGroup, Localized>;
 
 export const services = [
   {

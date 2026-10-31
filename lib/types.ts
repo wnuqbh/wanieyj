@@ -7,7 +7,8 @@ export function isLang(value: string): value is Lang {
 
 export type Localized = Record<Lang, string>;
 
-export type ServiceGroup = "corporate-uniform" | "women" | "mens-suit" | "batik";
+export const serviceGroups = ["corporate-uniform", "women", "mens-suit", "batik"] as const;
+export type ServiceGroup = (typeof serviceGroups)[number];
 
 export type Service = {
   slug: string;

@@ -21,6 +21,12 @@ export const dictionary = {
     enquiry: { en: "Send an enquiry", ms: "Hantar pertanyaan" },
     directions: { en: "Get directions", ms: "Dapatkan arah" },
   },
+  mega: {
+    batikEmpty: {
+      en: "Coming soon. Ask us on WhatsApp.",
+      ms: "Akan datang. Tanya kami di WhatsApp.",
+    },
+  },
   aria: {
     whatsapp: { en: "Chat with us on WhatsApp", ms: "Sembang dengan kami di WhatsApp" },
     openMenu: { en: "Open menu", ms: "Buka menu" },
