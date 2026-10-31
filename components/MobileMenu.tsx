@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import type { Lang } from "@/lib/types";
@@ -20,6 +20,17 @@ type MobileMenuProps = {
 export function MobileMenu({ lang, links }: MobileMenuProps) {
   const [open, setOpen] = useState(false);
   const aria = dictionary.aria;
+
+  useEffect(() => {
+    if (!open) return;
+
+    function handleKeyDown(event: KeyboardEvent) {
+      if (event.key === "Escape") setOpen(false);
+    }
+
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, [open]);
 
   return (
     <div className={styles.mobile}>
