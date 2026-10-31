@@ -1,0 +1,65 @@
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: var(--s-1);
+  padding: 0;
+  background: none;
+  border: 0;
+  font: inherit;
+  font-size: var(--t-label);
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--espresso);
+  cursor: pointer;
+}
+
+.toggle:hover {
+  color: var(--grey-text);
+}
+
+.panel {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  padding-block: var(--s-7);
+  background: var(--cream-2);
+  border-bottom: 1px solid var(--line);
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--s-6);
+}
+
+.heading {
+  display: block;
+  margin-bottom: var(--s-4);
+  font-size: var(--t-label);
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--espresso);
+  text-decoration: none;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item,
+.empty {
+  display: block;
+  padding-block: var(--s-1);
+  margin: 0;
+  color: var(--grey-text);
+  text-decoration: none;
+}
+
+.item:hover {
+  color: var(--espresso);
+}

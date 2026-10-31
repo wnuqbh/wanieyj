@@ -5,6 +5,7 @@ import { site } from "@/data/site";
 import styles from "./Header.module.css";
 import { LanguageSwitch } from "./LanguageSwitch";
 import { MobileMenu, type NavLink } from "./MobileMenu";
+import { MegaMenu } from "./MegaMenu";
 
 type HeaderProps = {
   lang: Lang;
@@ -27,11 +28,15 @@ export function Header({ lang }: HeaderProps) {
         </Link>
 
         <nav className={styles.nav}>
-          {links.map((link) => (
-            <Link key={link.href} href={link.href} className={styles.link}>
-              {link.label}
-            </Link>
-          ))}
+          {links.map((link) =>
+            link.href === `/${lang}/services/` ? (
+              <MegaMenu key={link.href} lang={lang} label={link.label} />
+            ) : (
+              <Link key={link.href} href={link.href} className={styles.link}>
+                {link.label}
+              </Link>
+            ),
+          )}
         </nav>
         <div className={styles.actions}>
           <LanguageSwitch lang={lang} />
