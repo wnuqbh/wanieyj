@@ -4,6 +4,7 @@ import { dictionary } from "@/data/dictionary";
 import { site } from "@/data/site";
 import styles from "./Header.module.css";
 import { LanguageSwitch } from "./LanguageSwitch";
+import { MobileMenu, type NavLink } from "./MobileMenu";
 
 type HeaderProps = {
   lang: Lang;
@@ -11,7 +12,7 @@ type HeaderProps = {
 
 export function Header({ lang }: HeaderProps) {
   const nav = dictionary.nav;
-  const links = [
+  const links: NavLink[] = [
     { href: `/${lang}/about/`, label: nav.about[lang] },
     { href: `/${lang}/services/`, label: nav.services[lang] },
     { href: `/${lang}/portfolios/`, label: nav.portfolios[lang] },
@@ -32,7 +33,10 @@ export function Header({ lang }: HeaderProps) {
             </Link>
           ))}
         </nav>
-        <LanguageSwitch lang={lang} />
+        <div className={styles.actions}>
+          <LanguageSwitch lang={lang} />
+          <MobileMenu lang={lang} links={links} />
+        </div>
       </div>
     </header>
   );

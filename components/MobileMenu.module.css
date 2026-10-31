@@ -1,0 +1,31 @@
+.toggle {
+  display: flex;
+  padding: var(--s-2);
+  background: none;
+  border: 0;
+  color: var(--espresso);
+  cursor: pointer;
+}
+
+.panel {
+  position: fixed;
+  inset: 64px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-5);
+  padding: var(--s-7) var(--s-4);
+  background: var(--cream);
+}
+
+.link {
+  font-family: var(--font-display), serif;
+  font-size: var(--t-h2);
+  color: var(--espresso);
+  text-decoration: none;
+}
+
+@media (min-width: 1024px) {
+  .mobile {
+    display: none;
+  }
+}
