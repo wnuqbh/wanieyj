@@ -3,6 +3,7 @@ import type { Lang } from "@/lib/types";
 import { dictionary } from "@/data/dictionary";
 import { site } from "@/data/site";
 import styles from "./Header.module.css";
+import { LanguageSwitch } from "./LanguageSwitch";
 
 type HeaderProps = {
   lang: Lang;
@@ -31,6 +32,7 @@ export function Header({ lang }: HeaderProps) {
             </Link>
           ))}
         </nav>
+        <LanguageSwitch lang={lang} />
       </div>
     </header>
   );

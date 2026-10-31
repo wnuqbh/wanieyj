@@ -1,0 +1,22 @@
+.switch {
+  display: flex;
+  gap: var(--s-3);
+}
+
+.link {
+  font-size: var(--t-label);
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  color: var(--grey-text);
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--espresso);
+}
+
+.link[aria-current="true"] {
+  color: var(--espresso);
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
